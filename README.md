@@ -63,7 +63,7 @@ A deployment profile was created to define the out-of-box experience for the dev
 
 | Setting | Value |
 |---|---|
-| Profile Name | SKO Autopilot Profile |
+| Profile Name | Windows Profile |
 | Deployment Mode | User-Driven |
 | Join Type | Microsoft Entra joined |
 | License Terms | Hidden |
