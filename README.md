@@ -71,7 +71,7 @@ A deployment profile was created to define the out-of-box experience for the dev
 
 | Setting | Value |
 |---|---|
-| Profile Name | Windows Profile |
+| Profile Name | Windows 11 Profile |
 | Deployment Mode | User-Driven |
 | Join Type | Microsoft Entra joined |
 | License Terms | Hidden |
