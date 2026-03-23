@@ -147,7 +147,7 @@ Microsoft 365 was configured as a **Required** app assignment, meaning it instal
 | Package | googlechromestandaloneenterprise64.msi |
 | Assigned | Yes — Windows 11 AP group |
 
-Google Chrome was uploaded as a line-of-business MSI app. Once assigned to the device group, it will deploy silently during or after the Autopilot provisioning process.
+Google Chrome was uploaded as a line-of-business MSI app.
 
 Both applications are managed centrally through Intune, allowing the IT Administrator to push updates, monitor install status, and remove apps remotely without touching the device.
 
