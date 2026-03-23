@@ -47,7 +47,7 @@ Install-Script -Name Get-WindowsAutopilotInfo
 Get-WindowsAutopilotInfo -OutputFile AutopilotHWID.csv
 ```
 
-(img/P1.png)
+![](img/P1.png)
 
 ---
 
@@ -59,7 +59,7 @@ A manual **Sync** was triggered after import to register the device with the Aut
 
 ---
 
-IMG
+![](img/P2.png)
 
 ---
 
@@ -80,7 +80,7 @@ A deployment profile was created to define the out-of-box experience for the dev
 
 ---
 
-IMG
+![](img/P3.png)
 
 ---
 
@@ -98,7 +98,7 @@ A dynamic Entra ID device group was configured to automatically target Autopilot
 ```
 ---
 
-IMG
+![](img/P4.png)
 
 ---
 
@@ -118,7 +118,7 @@ The profile status updated from **Not assigned** to **Assigned**, confirming the
 
 ---
 
-IMG
+![](img/P5.png)
 
 ---
 
@@ -153,7 +153,7 @@ Both applications are managed centrally through Intune, allowing the IT Administ
 
 ---
 
-IMG
+![](img/P6.png)
 
 ---
 
@@ -181,7 +181,7 @@ The profile was assigned to the **Windows 11 AP** dynamic device group, ensuring
 
 ---
 
-IMG
+![](img/P7.png)
 
 ---
 
@@ -195,7 +195,7 @@ On reboot, the device contacted the Autopilot service, retrieved the deployment 
 
 ---
 
-IMG
+![](img/P8.png)
 
 ---
 
@@ -216,7 +216,7 @@ Amanda received a fully managed, corporate-ready workstation with Microsoft 365 
 
 ---
 
-IMG
+![](img/P9.png)
 
 ---
 
