@@ -27,7 +27,7 @@ This project documents the full implementation of Windows Autopilot to provision
 
 ## Project Overview
 
-Amanda Mensah joined S.K.O Corporation and required a fully configured corporate workstation. Rather than manually setting up her device, the IT Administrator leveraged Windows Autopilot to deliver a zero-touch provisioning experience. Upon first boot, Amanda signed in with her corporate credentials and received a fully managed Windows 11 environment — with Microsoft 365 apps deployed and her device automatically enrolled into Intune — without any hands-on IT configuration at the endpoint.
+Amanda Mensah joined S.K.O Corporation and required a fully configured corporate workstation. Rather than manually setting up her device, the IT Administrator leveraged Windows Autopilot to deliver a zero-touch provisioning experience. Upon first boot, Amanda signed in with her corporate credentials and received a fully managed Windows 11 environment — with Microsoft 365 apps and Google Chrome deployed and her device automatically enrolled into Intune — without any hands-on IT configuration at the endpoint.
 
 ---
 
