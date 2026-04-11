@@ -16,11 +16,11 @@ This project documents the full implementation of Windows Autopilot to provision
 |---|---|
 | MDM Platform | Microsoft Intune |
 | Identity Platform | Microsoft Entra ID |
-| Deployment Method | Windows Autopilot — User-Driven |
+| Deployment Method | Windows Autopilot - User-Driven |
 | Join Type | Microsoft Entra joined (cloud-native) |
 | Target Device | PC01 (VirtualBox VM) |
 | Tenant | SKO12.onmicrosoft.com |
-| End User | Amanda Mensah — New Hire |
+| End User | Amanda Mensah - New Hire |
 | IT Administrator | Yaw Ankoma Owusu-Gyimah |
 
 ---
@@ -134,7 +134,7 @@ To ensure Amanda's workstation arrived with the necessary productivity and brows
 |---|---|
 | Type | Microsoft 365 Apps (Windows) |
 | Suite | Word, Excel, Outlook, Teams |
-| Assigned | Yes — Windows 11 AP group |
+| Assigned | Yes - Windows 11 AP group |
 
 Microsoft 365 was configured as a **Required** app assignment, meaning it installs automatically on any device in the group without user interaction.
 
@@ -145,7 +145,7 @@ Microsoft 365 was configured as a **Required** app assignment, meaning it instal
 | Type | Windows MSI line-of-business |
 | Version | 146.0.7680.154 |
 | Package | googlechromestandaloneenterprise64.msi |
-| Assigned | Yes — Windows 11 AP group |
+| Assigned | Yes - Windows 11 AP group |
 
 Google Chrome was uploaded as a line-of-business MSI app.
 
