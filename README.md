@@ -4,7 +4,7 @@
 
 S.K.O Corporation operates a cloud-first IT environment managed through Microsoft Intune and Microsoft Entra ID. As part of the organisation's modern device management strategy, the IT department implemented Windows Autopilot to streamline the onboarding process for new employees.
 
-Previously, preparing a workstation for a new hire required manual configuration by IT — imaging the device, joining it to the domain, installing applications, and handing it off. This project eliminates that process entirely. With Autopilot, a new employee's device is automatically configured, enrolled into Intune, and ready to use the moment they sign in with their corporate credentials — with no IT intervention at the physical device.
+Previously, preparing a workstation for a new hire required manual configuration by IT imaging the device, joining it to the domain, installing applications, and handing it off. This project eliminates that process entirely. With Autopilot, a new employee's device is automatically configured, enrolled into Intune, and ready to use the moment they sign in with their corporate credentials with no IT intervention at the physical device.
 
 This project documents the full implementation of Windows Autopilot to provision a corporate workstation for **Amanda Mensah**, a new hire at S.K.O Corporation.
 
@@ -27,13 +27,13 @@ This project documents the full implementation of Windows Autopilot to provision
 
 ## Project Overview
 
-Amanda Mensah joined S.K.O Corporation and required a fully configured corporate workstation. Rather than manually setting up her device, the IT Administrator leveraged Windows Autopilot to deliver a zero-touch provisioning experience. Upon first boot, Amanda signed in with her corporate credentials and received a fully managed Windows 11 environment — with Microsoft 365 apps and Google Chrome deployed and her device automatically enrolled into Intune — without any hands-on IT configuration at the endpoint.
+Amanda Mensah joined S.K.O Corporation and required a fully configured corporate workstation. Rather than manually setting up her device, the IT Administrator leveraged Windows Autopilot to deliver a zero-touch provisioning experience. Upon first boot, Amanda signed in with her corporate credentials and received a fully managed Windows 11 environment with Microsoft 365 apps and Google Chrome deployed and her device automatically enrolled into Intune — without any hands-on IT configuration at the endpoint.
 
 ---
 
 ## Implementation Steps
 
-### Step 1 — Hardware Hash Capture and Import
+### Step 1 - Hardware Hash Capture and Import
 
 The hardware hash was extracted from the target Windows 11 device using PowerShell and exported as a CSV file:
 
@@ -63,7 +63,7 @@ A manual **Sync** was triggered after import to register the device with the Aut
 
 ---
 
-### Step 2 — Autopilot Deployment Profile
+### Step 2 - Autopilot Deployment Profile
 
 A deployment profile was created to define the out-of-box experience for the device:
 
@@ -84,7 +84,7 @@ A deployment profile was created to define the out-of-box experience for the dev
 
 ---
 
-### Step 3 — Dynamic Device Group
+### Step 3 - Dynamic Device Group
 
 A dynamic Entra ID device group was configured to automatically target Autopilot-registered devices and receive the deployment profile:
 
@@ -108,7 +108,7 @@ The deployment profile was assigned to this group, ensuring any matching device 
 
 ---
 
-### Step 4 — Profile Assignment Verified
+### Step 4 - Profile Assignment Verified
 
 Once the device was Entra joined and appeared in the dynamic group, the Autopilot device list was synced:
 
@@ -122,7 +122,7 @@ The profile status updated from **Not assigned** to **Assigned**, confirming the
 
 ---
 
-### Step 5 — Application Deployment
+### Step 5 - Application Deployment
 
 To ensure Amanda's workstation arrived with the necessary productivity and browsing tools pre-installed, two applications were deployed through Intune before the device completed provisioning:
 
@@ -185,7 +185,7 @@ The profile was assigned to the **Windows 11 AP** dynamic device group, ensuring
 
 ---
 
-### Step 7 — Autopilot Provisioning
+### Step 7 - Autopilot Provisioning
 
 With the profile assigned, an Autopilot reset was initiated on the device:
 
@@ -212,7 +212,7 @@ The device was successfully provisioned through Windows Autopilot with no manual
 | Compliance | Compliant |
 | Last Check-in | 03/23/2026, 3:39 AM |
 
-Amanda received a fully managed, corporate-ready workstation with Microsoft 365 applications pre-deployed — delivered entirely through an automated provisioning pipeline.
+Amanda received a fully managed, corporate-ready workstation with Microsoft 365 applications pre-deployed delivered entirely through an automated provisioning pipeline.
 
 ---
 
